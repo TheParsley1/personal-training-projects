@@ -1,6 +1,14 @@
-summ = 0
-for i in range(1,1001):
-    if i % 5 == 0 or i % 3 ==0:
-        summ += i
-        print(i)
-print(summ)
+# Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.
+# Найдите сумму всех чисел меньше 1000, кратных 3 или 5.
+
+
+def summ(n):
+    summ = 0
+    for i in range(n):
+        if i % 5 == 0 or i % 3 == 0:
+            summ += i
+    return summ
+
+if __name__ == '__main__':
+    print(summ(10))
+    print(summ(1000))
